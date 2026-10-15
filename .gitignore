@@ -1,0 +1,46 @@
+# v0 runtime files (should only exist in preview, not in git)
+__v0_runtime_loader.js
+__v0_devtools.tsx
+__v0_jsx-dev-runtime.ts
+
+# Common ignores
+node_modules/
+.next/
+.env
+.env.local
+.env*.local
+.env.cloud
+.env*.cloud
+.DS_Store
+.vercel
+SC500/
+test-assets/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Datasets & generated data (too large for git)
+dataset/
+**/backend/data/
+**/.emergent/
+data/backups/
+data/*.jsonl
+
+# Model checkpoints (large binaries)
+**/backend/models/**/*.pth
+**/backend/models/**/*.pt
+
+# Debug logs / scratch benchmark output
+**/backend/debug_logs/
+*_log.txt
+*_log[0-9]*.txt
+*_log[0-9]*_log.txt
+scratch_val_*.csv
+tsconfig.tsbuildinfo
+
+# Editor / OS
+.vscode/
+Thumbs.db
